@@ -1,0 +1,21 @@
+{
+    "name": "tema/framework",
+    "type": "project",
+    "autoload": {
+        "files": [
+            "app/helpers.php",
+            "framework/functions.php"
+        ],
+        "psr-4": {
+            "Framework\\": "framework",
+            "App\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "MaynixX",
+            "email": "maynixoff@gmail.com"
+        }
+    ],
+    "require": {}
+}
