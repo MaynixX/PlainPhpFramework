@@ -22,3 +22,7 @@ function view(string $path, array $variables = []){
     ob_end_clean();
     return $data;
 }
+function env($target){
+    $env = require("../env.php");
+    return $env[$target] ?? null;
+}

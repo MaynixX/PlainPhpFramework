@@ -1,9 +1,10 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\User;
+
 class IndexController extends Controller{
     public function home(){
-        $user = ["login" => "admin", "name" => "Иванов Иван"];
-        return view("home", compact('user'));
+        dump(User::first());
     }
 }
